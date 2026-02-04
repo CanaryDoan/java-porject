@@ -1,16 +1,11 @@
-package Lec10_Abstraction.AbstractClass.All;
+package lec9_InheritanceandPolymorphism.Example2;
 
-public abstract class Animal {
+public class Animal {
 
-    private String name;
+    String source = "VietNam";
 
-    public Animal(String name) {
-        this.name = name;
+    void makeSound() {
+        System.out.println("Make a sound");
     }
 
-    public void displayName() {
-        System.out.println("Name:" + name);
-    }
-
-    public abstract void makeSound();
 }

@@ -1,10 +1,11 @@
-package lec10_Abstraction.Interface.MultiInheritance;
+package lec9_InheritanceandPolymorphism.Example2;
 
 public class Processor {
 
     public static void main(String[] args) {
-        Circle circle = new Circle();
-        circle.drawShape();
-        circle.fillColor();
+        Cat cat = new Cat();
+        cat.makeSound();
+        System.out.println("Cat's ID: " + cat.catID);
+        cat.catchMouse();
     }
 }

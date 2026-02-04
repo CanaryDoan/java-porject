@@ -1,14 +1,24 @@
-package Lec10_Abstraction.AbstractClass.All;
+package lec9_InheritanceandPolymorphism.Example1;
 
-public class Dog extends Animal {
+public class Dog {
 
-    public Dog(String name) {
-        super(name);
+    String dogID = "dog";
+    String source = "VietNam";
+
+    void makeSound() {
+        System.out.println("Make a sound");
     }
 
-    @Override
-    public void makeSound() {
-        System.out.println("Barks barks");
+    void guardHouse() {
+        System.out.println("Guard the house");
     }
 
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        System.out.println("ID: " + dog.dogID);
+        System.out.println("Source: "
+                + dog.source);
+        dog.makeSound();
+        dog.guardHouse();
+    }
 }

@@ -1,10 +1,10 @@
-package Lec9_Inheritance.Super.Example4;
+package lec9_InheritanceandPolymorphism.Example2;
 
 public class Cat extends Animal {
 
-    @Override
-    void makeSound() {
-        System.out.println("Meows meows");
-    }
+    String catID = "cat";
 
+    void catchMouse() {
+        System.out.println("Catch the mouse");
+    }
 }
