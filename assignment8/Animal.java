@@ -1,10 +1,16 @@
-package Lec9_Inheritance.Super.Example6;
+package Lec10_Abstraction.AbstractClass.All;
 
-public class Animal {
+public abstract class Animal {
 
-    void makeSound() {
-        System.out.println("Make a sound");
+    private String name;
+
+    public Animal(String name) {
+        this.name = name;
     }
-    String source = "VietNam";
 
+    public void displayName() {
+        System.out.println("Name:" + name);
+    }
+
+    public abstract void makeSound();
 }

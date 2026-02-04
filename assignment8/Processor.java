@@ -1,10 +1,10 @@
-package Lec9_Inheritance.Super.Method;
+package lec10_Abstraction.Interface.MultiInheritance;
 
 public class Processor {
 
     public static void main(String[] args) {
-        Husky husky = new Husky();
-        husky.displayInformation();
-
+        Circle circle = new Circle();
+        circle.drawShape();
+        circle.fillColor();
     }
 }

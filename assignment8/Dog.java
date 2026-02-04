@@ -1,8 +1,14 @@
-package Lec9_Inheritance.Super.Method;
+package Lec10_Abstraction.AbstractClass.All;
 
-public class Dog {
+public class Dog extends Animal {
 
-    void displayPrice() {
-        System.out.println("Dog's price is 1000 USD");
+    public Dog(String name) {
+        super(name);
     }
+
+    @Override
+    public void makeSound() {
+        System.out.println("Barks barks");
+    }
+
 }
